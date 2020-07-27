@@ -23,7 +23,7 @@ public class WebTextComponent extends WebComponent {
 	@Override public void render(Renderer r, SizePosGroup sizepos) {
 		//node.getParent().component.attributes.get("word-wrap");
 		calculateCascade();
-		String text = ((TextNodeImpl) node).wholeText.toString();
+		String text = ((TextNodeImpl) node).getRawText().toString();
 		
 		setRenderingData(r);
 		this.position = sizepos.pointer();

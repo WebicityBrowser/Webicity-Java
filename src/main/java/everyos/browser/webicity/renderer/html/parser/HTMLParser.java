@@ -1144,7 +1144,7 @@ public final class HTMLParser {
 			lc = new TextNodeImpl(getNodeDocument(parent));
 			parent.appendChild(lc);
 		}
-		((TextNodeImpl) lc).wholeText.appendCodePoint(data);
+		((TextNodeImpl) lc).append(data);
 	}
 	
 	private DocumentImpl getNodeDocument(Node n) {

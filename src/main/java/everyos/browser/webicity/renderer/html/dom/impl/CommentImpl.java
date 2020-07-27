@@ -1,6 +1,8 @@
 package everyos.browser.webicity.renderer.html.dom.impl;
 
-public class CommentImpl extends NodeImpl {
+import everyos.browser.webicity.renderer.html.dom.Comment;
+
+public class CommentImpl extends NodeImpl implements Comment {
 	@SuppressWarnings("unused")
 	private String data;
 

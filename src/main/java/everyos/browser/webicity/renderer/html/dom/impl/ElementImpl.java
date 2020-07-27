@@ -11,6 +11,7 @@ public class ElementImpl extends NodeImpl implements Element {
 	private String namespaceURI;
 	private String localName;
 	private String prefix;
+	@SuppressWarnings("unused")
 	private String is;
 	private String tagName;
 
